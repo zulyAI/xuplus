@@ -3,8 +3,6 @@ from langchain.text_splitter import CharacterTextSplitter
 from langchain.vectorstores import Chroma
 import mysql.connector
 
-
-
 # execute only once,
 # store table names and description in the vector db
 # later use different strategy find diff result
@@ -22,7 +20,7 @@ def _init_tables_from_schema():
         table_item = table_result[i]
         table_name = table_item[0]
         description = table_item[1]
-        _temp = {"name": table_name,"descript":description}
+        _temp = {"name": table_name, "descript": description}
         table_info.append(_temp)
         # assemble table
         query_find_columns = "SELECT COLUMN_NAME,COLUMN_COMMENT from INFORMATION_SCHEMA.COLUMNS where TABLE_NAME='" + table_name +"'"

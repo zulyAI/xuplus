@@ -5,5 +5,5 @@
     <option name="enabledOnSave" value="true" />
     <option name="sdkUUID" value="6cc70150-37ad-45e5-831a-2af983a6d614" />
   </component>
-  <component name="ProjectRootManager" version="2" project-jdk-name="sql" project-jdk-type="Python SDK" />
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.11 (plus)" project-jdk-type="Python SDK" />
 </project>
